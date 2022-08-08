@@ -1,9 +1,23 @@
 document.addEventListener(`DOMContentLoaded`, () => {
-  responseAxios();
+  responseAxios;
 });
 
 const URL_USERS_AXIOS = "https://jsonplaceholder.typicode.com/users";
-const fetchAxios = axios.get(URL_USERS_AXIOS);
+
+const fetchAxios = axios.get(URL_USERS_AXIOS).catch(function (error) {
+  if (error.response) {
+    // Request made and server responded
+    console.log(error.response.data);
+    console.log(error.response.status);
+    console.log(error.response.headers);
+  } else if (error.request) {
+    // The request was made but no response was received
+    console.log(error.request);
+  } else {
+    // Something happened in setting up the request that triggered an Error
+    console.log("Error", error.message);
+  }
+});
 
 const responseAxios = fetchAxios.then((response) => {
   console.log(response.data);

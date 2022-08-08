@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+.container_links{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    cursor:auto;
+}
+
+.container_links_first{
+    display: flex;
+    justify-content: center;
+    background-color: #FF6766;
+    height: 33%; 
+    align-items: center;
+
+}
+
+
+.container_links_second{
+    display: flex;
+    justify-content: center;
+    background-color: #3C3C3C;
+    height: 33%;
+    align-items: center;
+}
+
+.container_links_third{
+    display: flex;
+    justify-content: center;
+    height: 33%;
+    background-image: url("https://cdn.statically.io/img/timelinecovers.pro/facebook-cover/download/rick-and-morty-uhmm-facebook-cover.jpg");
+    background-repeat: no-repeat;
+    background-position:right;
+    background-color: rgb(44, 44, 58);
+    align-items: center;
+}
+
+
+
+  .container_link_btn {
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    border: 5px solid #fff;
+    font-weight: 100;
+    padding: 50px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+  }
+  
+  .container_link_btn:hover {
+    color: #f3f3f3;
+    font-weight: 700;
+    letter-spacing: 3px;
+    background: none;
+    border: 5px solid #fff;
+    transition: all 0.3s ease 0s;
+  }

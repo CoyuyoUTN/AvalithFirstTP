@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <title>Form</title>
+</head>
+<body>
+    <form id="form" class="form" action="">
+        <div class="logo"></div>
+        <div class="title">Welcome</div>
+        <div class="subtitle">Let's create your User!</div>
+        <div class="input_container" >
+            <input id="name" class="input" type="text"  maxlength="15" minlength="2" placeholder="Username" autocomplete="off" required>
+            <input id="email" class="input" type="email" maxlength="30" minlength="5" placeholder="Email" autocomplete="off" required>
+            <textarea id="textarea" class="input" name="textarea" placeholder="Write something here"  maxlength="100" minlength="2" required ></textarea>
+            <button type="submit">Send</button>
+            <button  onclick="location.href='./index.html'" href=""><span>Back</span></button>
+      
+    </div>
+    </form>
+    
+    <script src="../js/form.js"></script>
+</body>
+</html>

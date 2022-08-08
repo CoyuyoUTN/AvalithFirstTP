@@ -22,25 +22,29 @@ body {
 .form{
    position: relative;
     width: 350px;
-    height: 750px;
+    height: 780px;
     border-radius: 20px;
     padding: 40px;
     box-sizing: border-box;
     background: #ecf0f3;
     box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+   
   
 }
 
 .logo {
-  height: 150px;
-  width: 150px;
-  background: url("https://media-exp1.licdn.com/dms/image/C560BAQH5yH6szX78iQ/company-logo_100_100/0/1519898449593?e=2147483647&v=beta&t=OxkB0HPm8p3t_7LZamEo0YVp1BoG_lCltxvDLNpAIy0");
+  display: flex;
+  align-items: center;
+  height: 220px;
+  width: 220px;
+  background:#cbced1;
   margin: auto;
   border-radius: 50%;
   box-sizing: border-box;
   box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 10px;
 }
 
 .title {

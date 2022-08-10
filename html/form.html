@@ -8,7 +8,7 @@
     <title>Form</title>
 </head>
 <body>
-    <form id="form" class="form" action="" >
+    <form id="form" class="form" method="" >
         <div class="logo"><img src="https://www.avalith.net/icons/avalith-logo.svg"></div>
         <div class="title">Welcome</div>
         <div class="subtitle">Let's create your User!</div>
@@ -16,8 +16,8 @@
             <input id="name" class="input" type="text"  maxlength="15" minlength="2" placeholder="Username" autocomplete="off" required>
             <input id="email" class="input" type="email" maxlength="30" minlength="5" placeholder="Email" autocomplete="off" required>
             <textarea id="textarea" class="input" name="textarea" placeholder="Write something here"  maxlength="100" minlength="2" required ></textarea>
-            <button type="submit">Send</button>
-            <button  onclick="location.href='./index.html'" href=""><span>Back</span></button>
+            <button id="send">Send</button>
+            <button  type="submit" onclick="location.href='./index.html'" href=""><span>Back</span></button>
       
     </div>
     </form>

@@ -72,3 +72,42 @@
 .container_back_btn:active{
  background-color: #06b;
 }
+.container_back {
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.container_back_btn{
+  align-self: center;
+  width: 20%;
+  background-color: rgb(34, 32, 32);
+}
+.pagination{
+  border: 1px white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.pagination-btn{
+  width: 33%;
+  background-color: rgb(34, 32, 32);
+}
+
+.pagination-btn:active{
+  background-color: rgb(82, 78, 78);
+}
+
+.pagination-btn:hover{
+  background-color: rgb(82, 78, 78);
+}
+
+.container_back_btn:active{
+  background-color: rgb(82, 78, 78);
+}
+
+.container_back_btn:hover{
+  background-color: rgb(82, 78, 78);
+}

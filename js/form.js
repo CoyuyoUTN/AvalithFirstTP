@@ -13,7 +13,7 @@ document.getElementById("send").addEventListener("click", function (evento) {
   }
 
   const verification = validarEmail(email);
-  if (verification == 0) {
+  if (verification == false) {
     alert(
       "La dirección de email es incorrecta!. Prueba con @hotmail.com o gmail.com"
     );
@@ -33,15 +33,15 @@ document.getElementById("send").addEventListener("click", function (evento) {
 });
 
 const validarEmail = (email) => {
-  let bool = 0;
+  let bool = false;
   if (
     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(
       email
     )
   ) {
-    bool = 1;
+    bool = true;
   } else {
-    bool = 0;
+    bool = false;
   }
   return bool;
 };

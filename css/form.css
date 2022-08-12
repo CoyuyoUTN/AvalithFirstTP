@@ -20,9 +20,12 @@ body {
 }
 
 .form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
    position: relative;
     width: 350px;
-    height: 780px;
+    height: 100%;
     border-radius: 20px;
     padding: 40px;
     box-sizing: border-box;
